@@ -39,11 +39,10 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 # =====================================
-# Colors & LS
+# Colors
 # =====================================
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
-alias ls='ls -G'
 
 # =====================================
 # Keybindings
@@ -69,13 +68,26 @@ bindkey '^[^?' backward-kill-word
 # =====================================
 # Aliases
 # =====================================
-alias ll="ls -lah"
+# Modern replacements
+alias ls="eza"
+alias ll="eza -la --git"
+alias la="eza -la"
+alias tree="eza --tree"
+alias cat="bat -p"
+
+# Git
 alias gs="git status"
 alias ga="git add ."
 alias gc="git commit -m"
 alias gp="git push"
+alias gpl="git pull"
+alias gd="git diff"
+
+# Navigation
 alias ..="cd .."
 alias ...="cd ../.."
+
+# Other
 alias claude-mem='$HOME/.bun/bin/bun "$HOME/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
 
 # =====================================
@@ -115,6 +127,11 @@ fi
 
 # Node.js configuration
 export NODE_OPTIONS="--max-old-space-size=4096"
+
+# fzf (fuzzy finder)
+if (( $+commands[fzf] )); then
+  source <(fzf --zsh)
+fi
 
 # =====================================
 # Completion System

@@ -1,0 +1,53 @@
+[user]
+	name = Daniel Amram
+	email = danielamram0@gmail.com
+	signingkey = /Users/daniel/.ssh/id_rsa.pub
+
+[commit]
+	gpgsign = true
+
+[gpg]
+	format = ssh
+
+[push]
+	autoSetupRemote = true
+	default = current
+
+[pull]
+	rebase = true
+
+[init]
+	defaultBranch = main
+
+[core]
+	editor = cursor --wait
+	excludesfile = ~/.gitignore_global
+	pager = delta
+
+[diff]
+	colorMoved = default
+
+[merge]
+	conflictstyle = diff3
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	line-numbers = true
+	side-by-side = false
+
+[rerere]
+	enabled = true
+
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	lg = log --oneline --graph --decorate -10
+	amend = commit --amend --no-edit
+	undo = reset --soft HEAD~1
