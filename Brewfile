@@ -103,8 +103,6 @@ cask "appcleaner"
 cask "betterdisplay"
 # Open source IDE for exploring and testing APIs
 cask "bruno"
-# Free app that makes your Internet safer
-cask "cloudflare-warp"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "gcloud-cli"
 # 2D and 3D game engine
