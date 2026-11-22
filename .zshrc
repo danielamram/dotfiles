@@ -32,11 +32,12 @@ setopt HIST_REDUCE_BLANKS   # remove superfluous blanks from history
 setopt SHARE_HISTORY        # share history between sessions
 setopt INC_APPEND_HISTORY   # append to history immediately
 setopt EXTENDED_HISTORY     # add timestamps to history
+setopt HIST_FIND_NO_DUPS   # skip duplicates when searching history
 
 # History Configuration
 HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=50000
+SAVEHIST=50000
 
 # =====================================
 # Colors
@@ -47,11 +48,14 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 # =====================================
 # Keybindings
 # =====================================
-# Up/Down arrows: prefix history search
-bindkey '^[[A' history-beginning-search-backward
-bindkey '^[[B' history-beginning-search-forward
-bindkey '\e[A' history-beginning-search-backward
-bindkey '\e[B' history-beginning-search-forward
+# Up/Down arrows: prefix history search (cursor at end of line)
+autoload -U history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey '^[[A' history-beginning-search-backward-end
+bindkey '^[[B' history-beginning-search-forward-end
+bindkey '\e[A' history-beginning-search-backward-end
+bindkey '\e[B' history-beginning-search-forward-end
 
 # Ctrl+R: incremental pattern search
 bindkey '^R' history-incremental-pattern-search-backward
@@ -86,6 +90,10 @@ alias gd="git diff"
 # Navigation
 alias ..="cd .."
 alias ...="cd ../.."
+alias projects='cd $(find ~/dev ~/Projects -maxdepth 1 -type d | fzf)'
+
+# Utilities
+killport() { lsof -ti:$1 | xargs kill -9 }
 
 # Other
 alias claude-mem='$HOME/.bun/bin/bun "$HOME/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
@@ -172,3 +180,12 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Syntax highlighting (must be last)
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# OpenClaw Completion
+source "/Users/daniel/.openclaw/completions/openclaw.zsh"
+
+# bun completions
+[ -s "/Users/daniel/.bun/_bun" ] && source "/Users/daniel/.bun/_bun"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+

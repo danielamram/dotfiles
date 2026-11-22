@@ -1,0 +1,144 @@
+tap "supabase/tap"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# Development kit for the Java programming language
+brew "openjdk"
+# Tool for reverse engineering 3rd party, closed, binary Android apps
+brew "apktool"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Powerful, clean, object-oriented scripting language
+brew "ruby", link: false
+# Dependency manager for Cocoa projects
+brew "cocoapods"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Docker CLI plugin for extended build capabilities with BuildKit
+brew "docker-buildx"
+# Modern, maintained replacement for ls
+brew "eza"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# Play, record, convert, and stream many audio and video codecs
+brew "ffmpeg-full"
+# Fast and simple Node.js version manager
+brew "fnm"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GitHub command-line tool
+brew "gh"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
+# Quickly rewrite git repository history
+brew "git-filter-repo"
+# Git extension for versioning large files
+brew "git-lfs"
+# Audit git repos for secrets
+brew "gitleaks"
+# GNU Privacy Guard (OpenPGP)
+brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Kubernetes package manager
+brew "helm"
+# Install and debug iPhone apps from the command-line
+brew "ios-deploy"
+# Dex to Java decompiler
+brew "jadx"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "k9s"
+# Run local Kubernetes cluster in Docker
+brew "kind"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Postgres C API library
+brew "libpq"
+# Create, run, and share large language models (LLMs)
+brew "ollama"
+# Fast, disk space efficient package manager
+brew "pnpm"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
+# Generic machine emulator and virtualizer
+brew "qemu"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Extremely fast Python linter, written in Rust
+brew "ruff"
+# Easily detect and prevent bugs and anti-patterns in your codebase
+brew "semgrep"
+# Postgres development platform
+brew "supabase"
+# Define your dev environment as code. For microservice apps on Kubernetes
+brew "tilt"
+# Official tldr client written in Rust
+brew "tlrc"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# Watch files and take action when they change
+brew "watchman"
+# Tools for the WireGuard secure network tunnel
+brew "wireguard-tools"
+# Generate your Xcode project from a spec file and your folder structure
+brew "xcodegen"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# Enable Windows-like alt-tab
+cask "alt-tab"
+# Application uninstaller
+cask "appcleaner"
+# Display management tool
+cask "betterdisplay"
+# Open source IDE for exploring and testing APIs
+cask "bruno"
+# Free app that makes your Internet safer
+cask "cloudflare-warp"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli"
+# 2D and 3D game engine
+cask "godot"
+# Free and open-source media player
+cask "iina"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Open-source screen recorder built with web technology
+cask "kap"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
+# Control your tools with a few keystrokes
+cask "raycast"
+# Screenshot measurement and annotation tool
+cask "shottr"
+# System monitor for the menu bar
+cask "stats"
+# Multiplayer code editor
+cask "zed"
+vscode "anthropic.claude-code"
+vscode "anysphere.remote-containers"
+vscode "anysphere.remote-ssh"
+vscode "dbaeumer.vscode-eslint"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "teabyii.ayu"
+vscode "usernamehw.errorlens"
+vscode "wix.vscode-import-cost"
+vscode "yoavbls.pretty-ts-errors"
+uv "cli-anything-blender"
+uv "cli-anything-hub"
+npm "corepack"
+npm "nx"
+npm "openclaw"
+npm "tsx"
+npm "vercel"
