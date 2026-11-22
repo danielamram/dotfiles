@@ -38,18 +38,10 @@ brew "gitleaks"
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
-# Kubernetes package manager
-brew "helm"
 # Install and debug iPhone apps from the command-line
 brew "ios-deploy"
 # Dex to Java decompiler
 brew "jadx"
-# Kubernetes CLI To Manage Your Clusters In Style!
-brew "k9s"
-# Run local Kubernetes cluster in Docker
-brew "kind"
-# Kubernetes command-line interface
-brew "kubernetes-cli"
 # Simple terminal UI for git commands
 brew "lazygit"
 # Postgres C API library
@@ -62,8 +54,6 @@ brew "ollama"
 brew "pnpm"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
-# Generic machine emulator and virtualizer
-brew "qemu"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Extremely fast Python linter, written in Rust
@@ -74,8 +64,6 @@ brew "semgrep"
 brew "shellcheck"
 # Postgres development platform
 brew "supabase"
-# Define your dev environment as code. For microservice apps on Kubernetes
-brew "tilt"
 # Official tldr client written in Rust
 brew "tlrc"
 # Extremely fast Python package installer and resolver, written in Rust
