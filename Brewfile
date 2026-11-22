@@ -7,12 +7,16 @@ brew "openjdk"
 brew "apktool"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
 # Powerful, clean, object-oriented scripting language
 brew "ruby", link: false
 # Dependency manager for Cocoa projects
 brew "cocoapods"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
+# Load/unload environment variables based on $PWD
+brew "direnv"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
 # Docker CLI plugin for extended build capabilities with BuildKit
@@ -55,8 +59,12 @@ brew "k9s"
 brew "kind"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
+# Simple terminal UI for git commands
+brew "lazygit"
 # Postgres C API library
 brew "libpq"
+# NCurses Disk Usage
+brew "ncdu"
 # Create, run, and share large language models (LLMs)
 brew "ollama"
 # Fast, disk space efficient package manager
@@ -71,6 +79,8 @@ brew "ripgrep"
 brew "ruff"
 # Easily detect and prevent bugs and anti-patterns in your codebase
 brew "semgrep"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
 # Postgres development platform
 brew "supabase"
 # Define your dev environment as code. For microservice apps on Kubernetes
@@ -123,16 +133,6 @@ cask "shottr"
 cask "stats"
 # Multiplayer code editor
 cask "zed"
-vscode "anthropic.claude-code"
-vscode "anysphere.remote-containers"
-vscode "anysphere.remote-ssh"
-vscode "dbaeumer.vscode-eslint"
-vscode "eamodio.gitlens"
-vscode "esbenp.prettier-vscode"
-vscode "teabyii.ayu"
-vscode "usernamehw.errorlens"
-vscode "wix.vscode-import-cost"
-vscode "yoavbls.pretty-ts-errors"
 uv "cli-anything-blender"
 uv "cli-anything-hub"
 npm "corepack"
