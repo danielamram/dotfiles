@@ -12,22 +12,14 @@ brew "btop"
 brew "ruby", link: false
 # Dependency manager for Cocoa projects
 brew "cocoapods"
-# Container runtimes on MacOS (and Linux) with minimal setup
-brew "colima"
 # Load/unload environment variables based on $PWD
 brew "direnv"
-# Pack, ship and run any application as a lightweight container
-brew "docker"
-# Docker CLI plugin for extended build capabilities with BuildKit
-brew "docker-buildx"
 # Modern, maintained replacement for ls
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# Play, record, convert, and stream select audio and video codecs
-brew "ffmpeg"
 # Play, record, convert, and stream many audio and video codecs
-brew "ffmpeg-full"
+brew "ffmpeg-full", link: true
 # Fast and simple Node.js version manager
 brew "fnm"
 # Command-line fuzzy finder written in Go
@@ -90,8 +82,6 @@ brew "tlrc"
 brew "uv"
 # Watch files and take action when they change
 brew "watchman"
-# Tools for the WireGuard secure network tunnel
-brew "wireguard-tools"
 # Generate your Xcode project from a spec file and your folder structure
 brew "xcodegen"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
