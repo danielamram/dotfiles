@@ -2,7 +2,7 @@
 # PATH Configuration
 # =====================================
 export PATH="$HOME/bin:$PATH"
-export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH"
+export PATH="/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 # pnpm

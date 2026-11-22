@@ -1,4 +1,3 @@
-tap "supabase/tap"
 # Image format providing lossless and lossy compression for web images
 brew "webp"
 # Development kit for the Java programming language
