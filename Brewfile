@@ -90,6 +90,8 @@ cask "appcleaner"
 cask "betterdisplay"
 # Open source IDE for exploring and testing APIs
 cask "bruno"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "gcloud-cli"
 # 2D and 3D game engine
