@@ -19,7 +19,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # =====================================
 # Editor
 # =====================================
-export EDITOR="cursor --wait"
+export EDITOR="zed --wait"
 export VISUAL="$EDITOR"
 
 # =====================================

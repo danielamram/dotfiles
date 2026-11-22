@@ -20,7 +20,7 @@
 	defaultBranch = main
 
 [core]
-	editor = cursor --wait
+	editor = zed --wait
 	excludesfile = ~/.gitignore_global
 	pager = delta
 
