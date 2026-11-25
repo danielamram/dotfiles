@@ -104,6 +104,8 @@ cask "iterm2"
 cask "kap"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
+# Imaging utility to install operating systems to a microSD card
+cask "raspberry-pi-imager"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Screenshot measurement and annotation tool
