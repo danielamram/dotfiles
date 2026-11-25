@@ -84,6 +84,8 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 # Enable Windows-like alt-tab
 cask "alt-tab"
+# Android SDK component
+cask "android-platform-tools"
 # Application uninstaller
 cask "appcleaner"
 # Display management tool
