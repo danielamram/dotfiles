@@ -63,7 +63,6 @@ brew "semgrep"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Monitors sleep, wakeup, and idleness of a Mac
-brew "sleepwatcher", restart_service: :changed
 # Postgres development platform
 brew "supabase"
 # Official tldr client written in Rust
