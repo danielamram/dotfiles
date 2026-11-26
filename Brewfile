@@ -62,6 +62,8 @@ brew "ruff"
 brew "semgrep"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Monitors sleep, wakeup, and idleness of a Mac
+brew "sleepwatcher", restart_service: :changed
 # Postgres development platform
 brew "supabase"
 # Official tldr client written in Rust
@@ -118,6 +120,8 @@ cask "stats"
 cask "zed"
 uv "cli-anything-blender"
 uv "cli-anything-hub"
+uv "osxphotos"
+uv "whatsapp-chat-exporter", with: ["iphone-backup-decrypt git+https://github.com/KnugiHK/iphone_backup_decrypt"]
 npm "corepack"
 npm "nx"
 npm "openclaw"

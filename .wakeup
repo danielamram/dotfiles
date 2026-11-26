@@ -1,0 +1,6 @@
+#!/bin/zsh
+# Run by sleepwatcher on every wake. Universal Clipboard (iPhone -> Mac paste)
+# often breaks after sleep; restarting the Continuity daemons fixes it.
+sleep 5
+killall sharingd useractivityd pboard 2>/dev/null
+echo "$(date '+%F %T') restarted continuity daemons" >> /tmp/wakeup.log
