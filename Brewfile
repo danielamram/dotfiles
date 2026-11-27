@@ -4,6 +4,8 @@ brew "webp"
 brew "openjdk"
 # Tool for reverse engineering 3rd party, closed, binary Android apps
 brew "apktool"
+# Fast, lightweight CLI for App Store Connect
+brew "asc"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
@@ -62,7 +64,6 @@ brew "ruff"
 brew "semgrep"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
-# Monitors sleep, wakeup, and idleness of a Mac
 # Postgres development platform
 brew "supabase"
 # Official tldr client written in Rust
